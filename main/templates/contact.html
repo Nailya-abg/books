@@ -1,0 +1,19 @@
+{% extends 'books.html' %}
+{% load static %}
+
+{% block title %} Контакт {% endblock %}
+
+{% block content %}
+<h1 class="info">Автор сайта</h1>
+<div class="information">
+    <img src="{% static 'icons/author2.jpg' %}" alt="author">
+    <p><i class="fas fa-user-tie"></i>Насруллаева Наиля</p>
+    <p><i class="fas fa-mobile-alt"></i> <span> +996772785686</span></p>
+    <p><i class="fas fa-mobile-alt"></i> <span> +996220667781</span></p>
+    <p><i class="fas fa-mobile-alt"></i> <span> +996220129022</span></p>
+    <p><i class="fas fa-envelope-open-text"></i><span>nnasrullaieva@mail.ru</span></p>
+    <p><i class="fab fa-whatsapp"></i><span> +996772785686</span></p>
+  
+    <p class="but"><a href="{%  url 'home' %}"><button class="btn btn-info">Перейти на главную страницу</button></a></p>
+</div>
+{% endblock %}

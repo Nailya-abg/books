@@ -1,0 +1,24 @@
+{% extends 'books.html' %}
+{% load static %}
+{% block title %} Добавить новые книги {% endblock %}
+
+{% block content %}
+<main>
+    <div class="features">
+        
+        <form  method="POST">
+            <h1 class="form">Форма для заполнения</h1>
+            {% csrf_token %}</p>
+            <p>Заголовок: {{ form.title }}</p>
+            <p>Подзаголовок: {{ form.subtitle }}</p>
+            <p>Описание: {{ form.description }}</p>
+            <p>Жанр: {{ form.genre }}</p>
+            <p>Цена: {{ form.price }}</p>
+            <p>Автор: {{ form.author }}</p>
+            <p>Год издания: {{ form.year }}</p>
+     
+            <button class="create_button" type="submit">Добавить</button> 
+        </form>
+    </div>
+</main>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'books.html' %}
+{% load static %}
+
+{% block title %} Информация о книге {% endblock %}
+
+{% block content %}
+<h1 class="info"> Информация о книге</h1>
+    <div class="information">
+        
+        <p>Заголовок: <span>{{ book_list.title}}</span></p>
+        <p>Подзаголовок: <span>{{ book_list.subtitle}}</span></p>
+        <p>Описание: <span>{{ book_list.description}}</span></p>
+        <p>Цена(сом): <span>{{ book_list.price}}</span></p>
+        <p>Жанр: <span>{{ book_list.genre}}</span></p>
+        <p>Автор: <span>{{ book_list.author}}</span></p>
+        <p>Год издания: <span>{{ book_list.year}}</span></p>
+        <p>Дата загрузки на сайт: <span>{{ book_list.date}}</span></p>
+        <p class="but"><a href="{%  url 'home' %}"><button class="btn btn-info">Главная страница</button></a></p>
+    </div>
+{% endblock %}

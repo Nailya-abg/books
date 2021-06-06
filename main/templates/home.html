@@ -1,0 +1,14 @@
+{% extends 'books.html' %}
+
+
+{% block title %} Заголовок {% endblock %}
+
+{% block content %}
+<h1 class="info"> История книги</h1>
+<div class="info_home">
+    
+    <p>Книги – корабли мысли, странствующие по волнам времени и бережно несущие свой драгоценный груз от поколения к поколению.
+        Фрэнсис Бэкон.</p>
+    <p class="but"><a href="{%  url 'home' %}"><button class="btn btn-info">Главная страница</button></a></p>
+</div>
+{% endblock %}
